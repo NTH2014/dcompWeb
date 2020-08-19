@@ -1,0 +1,123 @@
+/*titulo principal*/
+
+body{
+    text-align: center;
+
+}
+
+#main{
+
+    margin-top: 30px;
+    font-size: 28px;
+    color:  Teal;
+    text-align: center;
+    font-family: Helvetica,sans-serif;
+
+}
+
+#sub{
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+/* NAV BAR */
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1b3854;
+}
+
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover{
+    background-color:  Teal;
+}
+
+
+/* ESTILIZANDO BOTÃO INPUT FILE*/
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#arquivo{
+
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.file{
+    margin-left: 180px;
+    align-self: center;
+}
+
+
+
+  
+.emitir{
+    margin-top: 35px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: Teal;
+    color: #fff;
+    height: 33px;
+    width: 130px;
+    align-content: center;
+    
+
+  }
+.emitir:hover{
+    background-color:blue;
+}
+
+
+/* RODAPE */
+footer{
+    background-color: #1b3854;
+    height: 100px;
+    border-top:  2px solid #1b3854;
+}
+
+footer p{
+    color: #f5f5f5;
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+.rodape{
+    position:absolute;
+    bottom:0;
+    width:98%;
+    height: 20%;
+
+}

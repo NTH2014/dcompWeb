@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissor de Dcomp Web</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="eel.js"></script>
+
+    <script>
+
+        document.getElementById("uploadBtn").onchange = function () {
+        document.getElementById("uploadFile").value = this.value;
+        };
+        function callPython(){
+            eel.funcionou()
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+    <nav>        
+        <ul>
+            <li><a href="index.html">Logo</a></li>
+            <li><a href="index.html">Emitir</a></li>
+            <li><a href="consult.html">Consultar</a></li>
+            <li><a href="about.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="main">Salvar Dcomp</h1>
+
+
+    <div class="file">
+        
+        <input type="file" name="arquivo" id="arquivo" value="Selecione a planilha">
+
+    </div>
+
+</body>
+</html>

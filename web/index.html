@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissor de Dcomp Web</title>
+    
+    <script src="eel.js"></script>
+
+    <script>
+
+        function callPython(){
+            file = document.getElementById("arquivo");
+
+            eel.emitir(file)
+                
+            }
+            
+        }
+
+        function abrirArquivo(){
+            let reader = new FileReader();
+            reader.onload = function(){
+                var dataURL = reader.result;
+                var output= document.getElementById('arquivo');
+                output.src = dataURL;
+                reader.readAsDataURL(input.file[0]);
+                
+            }
+            
+
+
+        }
+
+    </script>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div>
+        <nav>        
+            <ul>
+                <li><a href="index.html">Logo</a></li>
+                <li><a href="/">Emitir</a></li>
+                <li><a href="consult.html">Consultar</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="main"> Emitir DCOMP</h1>
+
+        <form action="">
+
+            <h3 id="sub">Selecione a planilha com os dados</h3> 
+
+            <div class="file">
+                <input type="file" name="arquivo" id="arquivo">
+            </div>
+
+            <button onclick="callPython()" class="emitir"> Emitir</button>
+
+        </form>
+
+        <div>
+            <p>lista de Dcomp emitidas:</p>
+        </div>
+        
+        <div class="rodape">
+        <footer > 
+            <p> Nicolas Almeida - Emissor Dcomp Web</p>
+        </footer>
+        </div>
+
+        <script>
+
+            function getFilePath(){
+
+                var file = document.getElementById("arquivo");
+         
+            }
+
+        </script>
+
+    </div>
+</body>
+</html>
